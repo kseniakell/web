@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="ru">
-<head>
-  <meta charset="UTF-8" />
+<html lang="ru"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Группа «Дружба»</title>
-  <link rel="icon" type="image/x-icon" href="ksenia_favicon.jpg">
+  <link rel="icon" type="image/x-icon" href="https://kseniakell.github.io/web/announcements/friendship2026/ksenia_favicon.jpg">
 
   <!-- Bootstrap -->
   <link 
@@ -57,11 +57,12 @@
       hyphens: auto;
       margin-bottom: 1.2em;
     }
+
     .paper {
-		background: #f0e6d2 url('https://www.transparenttextures.com/patterns/paper.png');
-        background-size: cover;
-        background-repeat: repeat;
-        z-index: 10;
+      background: #f0e6d2 url('https://www.transparenttextures.com/patterns/paper.png');
+      background-size: cover;
+      background-repeat: repeat;
+      z-index: 10;
     }
 
     .indent-para {
@@ -77,150 +78,169 @@
     header {
       padding: 3rem 0 2rem;
     }
-    
-      .btn-wide {
-    width: 180px;
-    text-align: center;
-  }
-  .btn-gap {
-    margin-right: 20px;  /* расстояние между кнопками */
-  }
-  
-  .info-btn {
-  width: 22px;
-  height: 22px;
-  border-radius: 50%;
-  border: 1px solid #444;
-  background: transparent;
-  color: #444;
-  font-size: 12px;
-  font-weight: bold;
-  line-height: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  padding: 0;
-  transition: 0.2s ease;
-}
 
-.info-btn:hover {
-  background: #444;
-  color: white;
-}
-
-.avatar {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    filter: saturate(0.95); /* приглушаем цвета */
-}
-
-
-
-  .btn-round-fixed {
-    width: 140px;
-    height: 140px;
-    padding: 10px;
-    border-radius: 50% !important;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    white-space: normal;
-    text-align: center;
-    font-size: 1rem;
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    word-break: break-word;
-    outline: none; /* Remove default focus outline */
-  }
-  @media (max-width: 767px) {
-    .btn-round-fixed {
-      width: 100% !important;
-      height: auto !important;
-      border-radius: 0.5rem !important;
-      padding: 15px 10px !important;
-      white-space: normal !important;
-      text-align: center !important;
-      font-size: 1rem !important;
+    .btn-wide {
+      width: 180px;
+      text-align: center;
     }
-  }
-  .btn-red {
-    background-color: #e25a5a !important; /* Updated Red */
-    border-color: #e25a5a !important;
-    color: white !important;
-  }
-  .btn-red:hover, .btn-red:focus {
-    background-color: #b34747 !important;
-    border-color: #b34747 !important;
-    color: white !important;
-  }
-  .btn-red.active, .btn-red:active, .btn-red:focus-visible {
-    box-shadow: 0 0 0 0.25rem rgba(226, 90, 90, 0.5);
-  }
-  .btn-orange {
-    background-color: #6e7f91 !important; /* Updated to muted blue-gray */
-    border-color: #6e7f91 !important;
-    color: white !important;
-  }
-  .btn-orange:hover, .btn-orange:focus {
-    background-color: #556770 !important;
-    border-color: #556770 !important;
-    color: white !important;
-  }
-  .btn-orange.active, .btn-orange:active, .btn-orange:focus-visible {
-    box-shadow: 0 0 0 0.25rem rgba(110, 127, 145, 0.5);
-  }
-  .btn-yellow {
-    background-color: #d8bf66 !important; /* Updated Yellow */
-    border-color: #d8bf66 !important;
-    color: white !important;
-  }
-  .btn-yellow:hover, .btn-yellow:focus {
-    background-color: #a68f3f !important;
-    border-color: #a68f3f !important;
-    color: white !important;
-  }
-  .btn-yellow.active, .btn-yellow:active, .btn-yellow:focus-visible {
-    box-shadow: 0 0 0 0.25rem rgba(216, 191, 102, 0.5);
-  }
-  .btn-olive {
-    background-color: #6d8f72 !important; /* Updated Green */
-    border-color: #6d8f72 !important;
-    color: white !important;
-  }
-  .btn-olive:hover, .btn-olive:focus {
-    background-color: #4a5f4a !important;
-    border-color: #4a5f4a !important;
-    color: white !important;
-  }
-  .btn-olive.active, .btn-olive:active, .btn-olive:focus-visible {
-    box-shadow: 0 0 0 0.25rem rgba(109, 143, 114, 0.5);
-  }
-  /* Added styles for the outline circle around active buttons */
-  .btn-round-fixed.active {
-    outline-offset: 4px;
-  }
-  .btn-red.active.btn-round-fixed {
-    outline: 3px solid rgba(226, 45, 45, 1);
-  }
-  .btn-orange.active.btn-round-fixed {
-    outline: 3px solid rgba(110, 90, 110, 1);
-  }
-  .btn-yellow.active.btn-round-fixed {
-    outline: 3px solid rgba(172, 143, 51, 1);
-  }
-  .btn-olive.active.btn-round-fixed {
-    outline: 3px solid rgba(54, 71, 36, 1);
-  }
-  /* Remove default blue focus ring on buttons */
-  .btn-round-fixed:focus {
-    outline: none !important;
-    box-shadow: none !important;
-  }
-  </style>
+
+    .btn-gap {
+      margin-right: 20px;
+    }
+
+    .info-btn {
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      border: 1px solid #444;
+      background: transparent;
+      color: #444;
+      font-size: 12px;
+      font-weight: bold;
+      line-height: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      padding: 0;
+      transition: 0.4s ease;
+    }
+
+    .info-btn:hover {
+      background: #444;
+      color: white;
+    }
+
+    .avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      filter: saturate(0.95);
+    }
+
+    /* Кнопки прямоугольные */
+    .btn-round-fixed {
+      width: 140px;
+      height: 70px;  /* Прямоугольные кнопки с фиксированной высотой */
+      padding: 10px;
+      border-radius: 0.5rem !important;  /* Прямоугольные углы */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-size: 1rem;
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+      outline: none;
+      transition: all 0.2s ease;
+      cursor: pointer;
+      box-shadow: 0 14px 16px rgba(0, 0, 0, 0.3);
+      border: 4px solid #333;
+      background-color: #fff000;
+    }
+
+    .btn-round-fixed:hover {
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+      transform: translateY(-2px);
+    }
+
+    .btn-red {
+      background-color: #e25a5a !important;
+      border-color: #e25a5a !important;
+      color: white !important;
+    }
+
+    .btn-red:hover, .btn-red:focus {
+      background-color: #b34747 !important;
+      border-color: #b34747 !important;
+    }
+
+    .btn-orange {
+      background-color: #f5a742 !important;
+      border-color: #f5a742 !important;
+      color: white !important;
+    }
+
+    .btn-orange:hover, .btn-orange:focus {
+      background-color: #e67300 !important;
+      border-color: #e67300 !important;
+    }
+
+
+    .btn-olive {
+      background-color: #6d8f72 !important;
+      border-color: #6d8f72 !important;
+      color: white !important;
+    }
+
+    .btn-olive:hover, .btn-olive:focus {
+      background-color: #4a5f4a !important;
+      border-color: #4a5f4a !important;
+    }
+
+    .btn-round-fixed.active {
+      outline-offset: 4px;
+    }
+
+    .btn-red.active.btn-round-fixed {
+      outline: 3px solid rgba(226, 45, 45, 1);
+    }
+
+    .btn-orange.active.btn-round-fixed {
+      outline: 3px solid rgba(255, 127, 0, 1);
+    }
+
+    .btn-yellow.active.btn-round-fixed {
+      outline: 3px solid rgba(172, 143, 51, 1);
+    }
+
+    .btn-olive.active.btn-round-fixed {
+      outline: 3px solid rgba(54, 71, 36, 1);
+    }
+
+    .btn-round-fixed:focus {
+      outline: none !important;
+      box-shadow: none !important;
+    }
+
+    .btn-spread {
+      column-gap: clamp(12px, 5vw, 120px);
+    }
+
+    .btn-red.active, .btn-orange.active, .btn-yellow.active, .btn-olive.active {
+      box-shadow: 0 0 0 0.25rem rgba(226, 90, 90, 0.5);
+    }
+
+    @media (max-width: 767px) {
+      .btn-round-fixed {
+        width: 100% !important;
+        height: 50px !important; /* уменьшаем высоту на мобильных */
+        padding: 12px 10px !important;
+        font-size: 1rem !important;
+        border-radius: 0.5rem !important;
+      }
+
+      .btn-spread {
+        row-gap: 24px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .btn-round-fixed {
+        width: 100% !important;
+        height: auto !important;
+        padding: 12px 10px !important;
+      }
+    }
+</style>
+
+
+
+
+
+
 </head>
 
 <body>
@@ -237,115 +257,163 @@
 
 <div class="container">
 
-  <h3>О группе</h3>
+
 
   <p class="special-para">
-    Мы с радостью открываем набор в закрытую динамическую группу, которую задумали как пространство для тех, 
-    кто хочет научиться строить и укреплять настоящую дружбу, находить значимые связи и развивать навыки 
-    открытого общения.
-  </p>
+  
+  Мы приглашаем в небольшую группу, где можно учиться заводить настоящих друзей, укреплять отношения и общаться открыто.
+</p>
 
   <p>
-    <b>Формат:</b> online<br>
-    <b>Время:</b> по вторникам с февраля по июль, 17:00–19:00<br>
-    <b>Оплата:</b> 3000 ₽ за встречу
+Старт 3 февраля <br/>
+Вторник 17:00-19:00 (мск) с февраля по июль <br/>
+Оплата 3000₽ за встречу<br/>
+<br/>
+Иногда достаточно просто прийти и попробовать —- остальное складывается в процессе.
   </p>
 
 </div>
 
-<div class="container text-center my-4 d-flex justify-content-center flex-wrap flex-md-nowrap gap-3">
-  <button class="btn btn-outline-primary rounded-circle btn-round-fixed btn-red" data-target="sectionVoprosy">О чем будем говорить</button>
-  <button class="btn btn-outline-primary rounded-circle btn-round-fixed btn-orange" data-target="sectionTseliMekhanika">Цели и механика</button>
-  <button class="btn btn-outline-primary rounded-circle btn-round-fixed btn-yellow" data-target="sectionVedyushchie">Ведущие</button>
-  <button class="btn btn-outline-primary rounded-circle btn-round-fixed btn-olive" data-target="sectionKontakty">Принять участие</button>
-</div>
+<div class="container my-4">
+  <div class="d-flex justify-content-center flex-wrap flex-md-nowrap text-center btn-spread">
+    <button class="btn btn-outline-primary rounded-circle btn-round-fixed btn-red"
+            data-target="sectionVoprosy">
+      О чем будем говорить?
+    </button>
 
-<div id="otherSections">
-  <div id="sectionVedyushchie" class="toggle-section container paper">
-    <h3 style="display: inline-block; border-bottom: 3px solid #d8bf66; padding-bottom: 0.3em;">Ведущие</h3>
-    <div class="d-flex align-items-left mb-4" style="margin-left: 15px;">
-      <img src="ks.jpg" alt="Ксения Келль" class="avatar img-fluid me-3" />
-      <div class="d-flex flex-column justify-content-center mb-3">
-        <h5 class="d-flex align-items-center mb-1">
-          Ксения Келль
-          <button class="info-btn ms-2" style="display:none;" data-bs-toggle="modal" data-bs-target="#modalKsenia" style="border: none; background: transparent; padding: 0;">
-            <i class="bi bi-info-circle" style="font-size: 1.1rem; color: inherit;"></i>
-          </button>
-          <a href="https://wellb-centre.ru/kseniakell" class="ms-2" target="_blank" style="color: inherit;">
-            <i class="bi bi-globe2" style="font-size: 1.1rem;"></i>
-          </a>
-        </h5>
-        <p class="mb-0">Психолог, позитивный психотерапевт</p>
-      </div>
-    </div>
-    <div class="d-flex align-items-left mb-4" style="margin-left: 15px;">
-      <img src="ka.jpg" alt="Катя Антонова" class="avatar img-fluid me-3" />
-      <div class="d-flex flex-column justify-content-center mb-3">
-        <h5 class="d-flex align-items-center mb-1">
-          Катя Антонова
-          <button class="info-btn ms-2" style="display:none;" data-bs-toggle="modal" data-bs-target="#modalKatya" style="border: none; background: transparent; padding: 0;">
-            <i class="bi bi-info-circle" style="font-size: 1.1rem; color: inherit;"></i>
-          </button>
-          <a href="https://wellb-centre.ru/eantonova" class="ms-2" target="_blank" style="color: inherit;">
-            <i class="bi bi-globe2" style="font-size: 1.1rem;"></i>
-          </a>
-        </h5>
-        <p class="mb-0">Психолог, позитивный психотерапевт</p>
-      </div>
-    </div>
-  </div>
+    <button class="btn btn-outline-primary rounded-circle btn-round-fixed btn-orange"
+            data-target="sectionTseliMekhanika">
+      Как проходят встречи?
+    </button>
 
-  <div id="sectionTseliMekhanika" class="toggle-section" style="display:none";>
-  <div id="sectionTseli" class="container paper" >
-    <h3 style="display: inline-block; border-bottom: 3px solid #6e7f91; padding-bottom: 0.3em;">Цели группы</h3>
-    <ul>
-      <li>Познакомиться со своим привычным стилем общения, научиться замечать и анализировать собственные паттерны.</li>
-      <li>Получить практический опыт применения новых, более конструктивных способов коммуникации.</li>
-    </ul>
-  </div>
-
-  <div id="sectionMekhanika" class="container paper">
-    <h3 style="display: inline-block; border-bottom: 3px solid #6e7f91; padding-bottom: 0.3em;">Механика работы</h3>
-    <ul>
-      <li>Обучение и практика через групповые упражнения и индивидуальные разборы личных ситуаций.</li>
-      <li>Атмосфера поддержки и честная, конструктивная обратная связь от участников.</li>
-      <li>Короткая (15–20 минут) предварительная встреча с ведущими перед вступлением.</li>
-    </ul>
+    <button class="btn btn-outline-primary rounded-circle btn-round-fixed btn-olive"
+            data-target="sectionVedyushchie">
+      Ведущие
+    </button>
   </div>
 </div>
+
+
+
+
+<div id="sectionVedyushchie" class="toggle-section container paper" style="display: none;">
+  <h3 style="display: inline-block; border-bottom: 3px solid #6d8f72; padding-bottom: 0.3em;">
+    Ведущие
+  </h3>
+
+<p class="special-para">
+   Мы — Ксения Келль и Екатерина Антонова, практикующие психологи в подходе позитивной транскультуральной психотерапии. Помогаем разбираться в отношениях, справляться со стрессом, тревогой и трудными жизненными ситуациями, работать над самооценкой и учиться строить доверительные и близкие связи с людьми.
+
+Ведём терапию более 5 лет, создавая безопасное пространство для понимания себя и живого общения с другими.
+  </p>
+  <!-- Фото по центру -->
+  <div class="d-flex justify-content-center gap-4 my-4">
+    <div class="text-center">
+      <img src="https://kseniakell.github.io/web/announcements/friendship2026/ks.jpg" alt="Ксения Келль" class="avatar img-fluid mb-2">
+      <h5 class="mb-0">Ксения</h5>
+    </div>
+
+    <div class="text-center">
+      <img src="https://kseniakell.github.io/web/announcements/friendship2026/ka.jpg" alt="Катя Антонова" class="avatar img-fluid mb-2">
+      <h5 class="mb-0">Екатерина</h5>
+    </div>
+  </div>
+
+  
+</div>
+
+
+  <div id="sectionTseliMekhanika" class="toggle-section container paper" style="display: none;">
+    <h3 style="display: inline-block; border-bottom: 3px solid #a68f3f; padding-bottom: 0.3em;">Как проходят встречи</h3>
+
+<ul>
+<li> Раз в неделю онлайн, в zoom, в привычном и комфортном формате.</li>
+<li> Простые упражнения помогают заметить свои привычки в общении.</li>
+<li> Разбираем реальные ситуации участников и учимся говорить о своих мыслях и чувствах.</li>
+<li> Честная и бережная обратная связь помогает увидеть себя со стороны. </li>
+</ul>
+Встречи проходят регулярно в течение полугода —
+чтобы без спешки разобраться в себе и попробовать новое.
+
+Предварительно будет короткая индивидуальная онлайн-встреча (15–20 минут) с ведущими,
+чтобы познакомиться, задать вопросы и понять, подходит ли формат.
+  </div>
+
   <div id="sectionVoprosy" class="toggle-section container paper" style="display:none;">
-    <h3 style="display: inline-block; border-bottom: 3px solid #e25a5a; padding-bottom: 0.3em;">Какие вопросы можно принести</h3>
-    <ul>
-      <li>Как найти новых друзей и создать значимые связи?</li>
-      <li>Что делать, когда хочется дружить, но кажется, что это невозможно?</li>
-      <li>Как стать более открытым и заметить, что интересуешь других?</li>
-      <li>Научиться строить и укреплять настоящую дружбу.</li>
-      <li>Понять свои потребности в дружбе и потребности своих друзей.</li>
-      <li>Получать больше удовлетворения от времени, проведённого с друзьями.</li>
-      <li>Развить навыки открытого и доверительного общения о важном.</li>
-      <li>Поддерживать дружбу, даже если вы живёте далеко друг от друга.</li>
-      <li>Как справиться с переменами в жизни друзей, сохраняя близость.</li>
-      <li>Научиться переживать разочарования и завершать отношения, которые тяготят.</li>
-    </ul>
+    
+    <h3 style="display: inline-block; border-bottom: 3px solid #6e7f91; padding-bottom: 0.3em;"> О чём мы будем говорить</h3>
+<h4>Самое главное:</h4>
+<ul>
+
+<li>На встречи можно приходить с любыми вопросами про отношения.</li>
+
+</ul>
+<br/>
+<h4>Мы точно обсудим:</h4>
+<ul>
+<li> где и как находить новых людей</li>
+<li> как сближаться, не оставаясь на уровне поверхностного общения</li>
+<li> что делать, если хочется близости, а начать кажется сложно</li>
+<li> как говорить о важном, не замалчивая то, что важно лично вам</li>
+<li> как поддерживать контакт и не теряться в отношениях</li>
+<li> как лучше понимать, что вам подходит, а что — нет</li>
+</ul>
+
+<h4>Также затронем непростые моменты:</h4>
+<ul>
+<li> как заводить и развивать дружбу</li>
+<li> как поддерживать отношения на расстоянии</li>
+<li> как переживать изменения в жизни друзей</li>
+<li> как справляться с разочарованиями</li>
+<li> как отпускать отношения, которые больше не приносят тепла</li>
+</ul>
+
   </div>
 
-  <div id="sectionKontakty" class="toggle-section container paper" style="display:none;">
+  <div id="sectionKontakty" class="toggle--section container paper">
     <h3 style="display: inline-block; border-bottom: 3px solid #6d8f72; padding-bottom: 0.3em;">Контакты</h3>
 
     <p class="special-para">
   Если вас заинтересовало участие, напишите нам в телеграм:
 </p>
     <div class="d-flex justify-content-center mt-3">
-      <a href="https://t.me/directorvsehvremen" class="btn btn-outline-dark btn-wide btn-gap" target="_blank">
-        <i class="fab fa-telegram"></i> Катя
-      </a>
-      <a href="https://t.me/kseniakell" class="btn btn-outline-dark btn-wide" target="_blank">
+
+      <a href="https://t.me/kseniakell" class="btn btn-outline-dark btn-wide btn-gap" target="_blank">
         <i class="fab fa-telegram"></i> Ксюша
       </a>
+      
+    <a href="https://t.me/directorvsehvremen" class="btn btn-outline-dark btn-wide"  target="_blank">
+        <i class="fab fa-telegram"></i> Катя
+      </a>
     </div>
-    <br/>
+    <br>
 
-    <script>
+
+  </div>
+</div>
+</div>
+
+     
+
+    
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+   <script>
       document.addEventListener('DOMContentLoaded', () => {
         const buttons = document.querySelectorAll('.btn-outline-primary[data-target]');
         const sections = document.querySelectorAll('.toggle-section');
@@ -369,74 +437,9 @@
         });
       });
     </script>
-  </div>
-</div>
-</div>
-
-     
-    </div>
-    
 
 
 
-
-
-
-
-  <!-- Модальное окно КСЕНИЯ -->
-  <div class="modal fade" id="modalKsenia" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content p-3">
-        <h5 class="mb-3">Ксения Келль</h5>
-        <p class="special-para no-indent">
-          Психолог, аккредитованный позитивный психотерапевт, рекомендованный терапевт в методе 
-          Позитивной Психотерапии, член Всемирной Ассоциации Позитивной Психотерапии (WAPP), 
-          держатель Европейского сертификата «Positive Psychotherapist».
-        </p>
-        <p class="indent-para"><b>Повышение квалификации:</b></p>
-        <ul>
-          <li>Институт медицинской психологии им. Б.Д. Карвасарского: «Современная когнитивно-поведенческая психотерапия»</li>
-          <li>Московский Гештальт Институт: «Клиническая психиатрия»</li>
-        </ul>
-        <div class="text-end mt-2">
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="position: absolute; top: 10px; right: 10px;"></button>
-        </div>
-      </div>
-    </div>
-  </div>
-
- 
-  <!-- Модальное окно КАТЯ -->
-  <div class="modal fade" id="modalKatya" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content p-3">
-        <h5 class="mb-3">Катя Антонова</h5>
-        <p class="special-para no-indent">
-          Практический психолог, аккредитованный консультант в методе Позитивной Психотерапии, 
-          член Всемирной Ассоциации Позитивной Психотерапии (WAPP), кандидат на получение 
-          Европейского сертификата «Positive Psychotherapist».
-        </p>
-        <div class="text-end mt-2">
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="position: absolute; top: 10px; right: 10px;"></button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-</div>
 
 </body>
 </html>
