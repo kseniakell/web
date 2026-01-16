@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirect</title>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6MNMLKRYFW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-6MNMLKRYFW', {
+      page_path: '/go/qxz'
+    });
+
+    gtag('event', 'go_redirect', {
+      destination: 'qxz',
+      target_url: 'https://kseniakell.com/announcements/friendship2026/',
+      transport_type: 'beacon'
+    });
+
+    setTimeout(() => {
+      window.location.replace(
+        'https://kseniakell.com/announcements/friendship2026/?utm_source=qxz&utm_medium=link&utm_campaign=qxz'
+      );
+    }, 400);
+  </script>
+</head>
+<body>
+ 
+</body>
+</html>
