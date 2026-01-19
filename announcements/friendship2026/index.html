@@ -137,7 +137,6 @@
       cursor: pointer;
       box-shadow: 0 14px 16px rgba(0, 0, 0, 0.3);
       border: 4px solid #333;
-      background-color: #fff000;
     }
 
     .btn-round-fixed:hover {
@@ -145,24 +144,14 @@
       transform: translateY(-2px);
     }
 
-    .btn-red {
-      background-color: #e25a5a !important;
-      border-color: #e25a5a !important;
-      color: white !important;
-    }
 
-    .btn-red:hover, .btn-red:focus {
-      background-color: #b34747 !important;
-      border-color: #b34747 !important;
-    }
-
-    .btn-orange {
+    .btn-orange, .btn-red {
       background-color: #f5a742 !important;
       border-color: #f5a742 !important;
       color: white !important;
     }
 
-    .btn-orange:hover, .btn-orange:focus {
+    .btn-orange:hover, .btn-orange:focus, .btn-red:hover, .btn-red:focus {
       background-color: #e67300 !important;
       border-color: #e67300 !important;
     }
@@ -187,13 +176,6 @@
       outline: 3px solid rgba(226, 45, 45, 1);
     }
 
-    .btn-orange.active.btn-round-fixed {
-      outline: 3px solid rgba(255, 127, 0, 1);
-    }
-
-    .btn-yellow.active.btn-round-fixed {
-      outline: 3px solid rgba(172, 143, 51, 1);
-    }
 
     .btn-olive.active.btn-round-fixed {
       outline: 3px solid rgba(54, 71, 36, 1);
@@ -255,23 +237,28 @@
 
 
 <div class="container">
+  <div class="row">
+    <!-- Текстовая часть (правая колонка) -->
+    <div class="col-md-6">
+      <p class="special-para">
+        Мы приглашаем в небольшую группу, где можно учиться заводить настоящих друзей, укреплять отношения и общаться открыто.
+      </p>
+      <p>
+        Старт 3 февраля <br/>
+        Вторник 17:00-19:00 (мск) с февраля по июль <br/>
+        Оплата 3000₽ за встречу<br/>
+        <br/>
+        Иногда достаточно просто прийти и попробовать —- остальное складывается в процессе.
+      </p>
+    </div>
 
-
-
-  <p class="special-para">
-  
-  Мы приглашаем в небольшую группу, где можно учиться заводить настоящих друзей, укреплять отношения и общаться открыто.
-</p>
-
-  <p>
-Старт 3 февраля <br/>
-Вторник 17:00-19:00 (мск) с февраля по июль <br/>
-Оплата 3000₽ за встречу<br/>
-<br/>
-Иногда достаточно просто прийти и попробовать —- остальное складывается в процессе.
-  </p>
-
+    <!-- Картинка (левая колонка) -->
+    <div class="col-md-6">
+      <img src="friends.jpg" class="img-fluid" alt="friends">
+    </div>
+  </div>
 </div>
+
 
 <div class="container my-4">
   <div class="d-flex justify-content-center flex-wrap flex-md-nowrap text-center btn-spread">
@@ -340,7 +327,7 @@
   <div id="sectionVoprosy" class="toggle-section container paper" style="display:none;">
     
     <h3 style="display: inline-block; border-bottom: 3px solid #6e7f91; padding-bottom: 0.3em;"> О чём мы будем говорить</h3>
-<h4>На встречи можно приходить с любыми вопросами про отношения.</h4>
+<h4>На встречи можно приходить с любыми вопросами про отношения</h4>
 
 <br/>
 <h4>Мы точно обсудим:</h4>
@@ -368,7 +355,7 @@
     <h3 style="display: inline-block; border-bottom: 3px solid #6d8f72; padding-bottom: 0.3em;">Контакты</h3>
 
     <p class="special-para">
-  Если вас заинтересовало участие, напишите нам в телеграм:
+ Напишите нам, и мы все расскажем:
 </p>
     <div class="d-flex justify-content-center mt-3">
 
