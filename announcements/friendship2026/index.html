@@ -287,10 +287,32 @@
     color: black; /* Черный цвет для иконки */
 }
 
-</style>
+  .content-section {
+        text-align: center;
+        position: relative;
+        margin-top: 20px;
+    }
 
-</style>
 
+ 
+    .orange-line {
+        border: none; /* Убираем стандартные стили для <hr> */
+        height: 50px; /* Толщина линии */
+        background-color: #f39e41; /* Оранжевый цвет */
+        width: 33%; /* Задаем ширину линии — треть экрана */
+        margin: 20px auto; /* Центрируем линию и добавляем отступы */
+    }
+
+    /* Добавьте больше специфичности */
+    .content-section hr.orange-line {
+        border: none; /* Убираем стандартные стили для <hr> */
+        height: 50px !important; /* Толщина линии — 50px, с использованием !important */
+        background-color: #f39e41 !important; /* Оранжевый цвет */
+        width: 33%; /* Ширина линии — треть экрана */
+        margin: 20px auto; /* Центрируем линию по горизонтали */
+        border-radius: 5px; /* Скругление углов */
+    }
+</style>
 
 
 
@@ -377,6 +399,8 @@
                 <h5 class="mb-0">Екатерина <a href="https://wellb-centre.ru/eantonova" target="_blank"><i class="bi bi-globe2" style="font-size: 1.1rem;"></i></a></h5>
             </div>
         </div>
+    <hr style="border: none; height: 4px; background-color: #f39e41; width: 33%; margin: 20px auto; border-radius: 5px;"/>
+    
     </div>
     <div id="sectionTseliMekhanika" class="tab-pane fade">
         <h3 style="display: inline-block; border-bottom: 3px solid #f39e41; padding-bottom: 0.3em;">Как проходят встречи</h3>
@@ -389,7 +413,9 @@
         Встречи проходят регулярно в течение полугода — чтобы без спешки разобраться в себе и попробовать новое.
         <br>
         Предварительно будет короткая индивидуальная онлайн-встреча (15–20 минут) с ведущими, чтобы познакомиться, задать вопросы и понять, подходит ли формат.
+<hr style="border: none; height: 4px; background-color: #f39e41; width: 33%; margin: 20px auto; border-radius: 5px;"/>
     </div>
+    
     <div id="sectionVoprosy" class="tab-pane fade">
         <h3 style="display: inline-block; border-bottom: 3px solid #f39e41; padding-bottom: 0.3em;">О чём мы будем говорить</h3>
         <h4>На встречи можно приходить с любыми вопросами про отношения</h4>
@@ -411,30 +437,36 @@
             <li>Как справляться с разочарованиями</li>
             <li>Как отпускать отношения, которые больше не приносят тепла</li>
         </ul>
+    <hr style="border: none; height: 4px; background-color: #f39e41; width: 33%; margin: 20px auto; border-radius: 5px;"/>
+
+    </div>
+
+</div>
+
+
+
+<div class="content-section">
+    <p style="text-align: center;">
+        Группа активно формируется — и к ней еще можно успеть присоединиться.
+    </p>
+    <p style="text-align: center;">
+        Напишите нам в телеграм кодовое слово «<b>дружба</b>» и мы все подробно расскажем.
+    </p>
+
+    <div class="d-flex justify-content-center mt-3">
+        <a href="https://t.me/kseniakell" class="btn btn-outline-primary btn-wide btn-gap" target="_blank">
+            <i class="fab fa-telegram"></i> Ксюша
+        </a>
+
+        <a href="https://t.me/directorvsehvremen" class="btn btn-outline-primary btn-wide btn-gap" target="_blank">
+            <i class="fab fa-telegram"></i> Катя
+        </a>
     </div>
 </div>
 
 
 
-    <p style="text-align: center;">
-Группа активно формируется —  и к ней еще можно успеть присоединиться.</p>
-    <p style="text-align: center;">
-Напишите нам в телеграм кодовое слово «<b>дружба</b>» и мы все подробно расскажем. </p>
 
-    <div class="d-flex justify-content-center mt-3">
-
-<a href="https://t.me/kseniakell" class="btn btn-outline-primary btn-wide btn-gap" target="_blank">
-    <i class="fab fa-telegram"></i> Ксюша </a>
-
-      
-    <a href="https://t.me/directorvsehvremen" class="btn btn-outline-primary btn-wide btn-gap"  target="_blank">
-        <i class="fab fa-telegram"></i> Катя
-      </a>
-    </div>
-    <br>
-
-
-  </div>
 </div>
 </div>
 
