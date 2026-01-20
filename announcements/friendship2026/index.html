@@ -25,7 +25,7 @@
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-  <style>
+<style>
     body {
       background: linear-gradient(to bottom, #f5f1e7, #f5ede1);
       -webkit-font-smoothing: antialiased;
@@ -119,12 +119,11 @@
       filter: saturate(0.95);
     }
 
-    /* Кнопки прямоугольные */
     .btn-round-fixed {
       width: 140px;
-      height: 70px;  /* Прямоугольные кнопки с фиксированной высотой */
+      height: 70px;
       padding: 10px;
-      border-radius: 0.5rem !important;  /* Прямоугольные углы */
+      border-radius: 0.5rem !important;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -144,26 +143,6 @@
       transform: translateY(-2px);
     }
 
-
-    .btn-orange, .btn-red, .btn-olive  {
-      background-color: #f5a742 !important;
-      border-color: #f5a742 !important;
-      color: white !important;
-    }
-
-    .btn-orange:hover, 
-    .btn-orange:focus, 
-    .btn-red:hover, 
-    .btn-red:focus,
-    .btn-olive:focus,
-    .btn-olive:focus, {
-      background-color: #f39e41 !important;
-      border-color: #f39e41 !important;
-    }
-
-
-
-
     .btn-round-fixed.active {
       outline-offset: 4px;
     }
@@ -171,7 +150,6 @@
     .btn-red.active.btn-round-fixed {
       outline: 3px solid rgba(226, 45, 45, 1);
     }
-
 
     .btn-olive.active.btn-round-fixed {
       outline: 3px solid rgba(54, 71, 36, 1);
@@ -193,7 +171,7 @@
     @media (max-width: 767px) {
       .btn-round-fixed {
         width: 100% !important;
-        height: 50px !important; /* уменьшаем высоту на мобильных */
+        height: 50px !important;
         padding: 12px 10px !important;
         font-size: 1rem !important;
         border-radius: 0.5rem !important;
@@ -213,14 +191,104 @@
     }
     
     .custom-rounded {
-    border-radius: 0.5rem; /* Можете изменить значение для нужного эффекта */
-  }
-  
-  .special-para {
-  font-size: 1.1rem;
-}
+      border-radius: 0.5rem;
+    }
+
+    /* Стили для вкладок */
+    .nav-pills {
+      display: flex;
+      justify-content: space-between; /* Распределяем пространство между вкладками */
+      gap: 0; /* Убираем дополнительные отступы между элементами */
+      flex-wrap: wrap;
+    }
+
+    .nav-pills .nav-link {
+      border-radius: 0.5rem;
+      padding: 10px 20px;
+      font-weight_: bold;
+      text-transform_: uppercase;
+      transition: all 0.3s ease;
+      margin: 0 5px;
+      background-color: transparent; /* Прозрачный фон по умолчанию */
+      border: 2px solid #f39e41; /* Рамка с цветом #f39e41 */
+      color_: #f39e41; /* Цвет текста */
+      color: #404040; /* Цвет текста */
+      display: flex; /* Используем flexbox */
+      justify-content: center; /* Горизонтальное выравнивание */
+      align-items: center; /* Вертикальное выравнивание */
+      flex: 1; /* Все вкладки занимают одинаковую ширину */
+      text-align: center; /* Центрируем текст */
+    }
+
+    /* Стиль для активной вкладки */
+    .nav-pills .nav-link.active {
+      background-color: #f39e41 !important;
+      border-color: #f39e41 !important;
+      color: white; /* Цвет текста активной вкладки */
+    }
+
+    /* Стиль при наведении на вкладку */
+    .nav-pills .nav-link:hover {
+      background-color: #f39e41 !important;
+      border-color: #f39e41 !important;
+      color: white;
+    }
+
+    /* Убираем стандартное выделение на вкладке */
+    .nav-pills .nav-link:focus {
+      box-shadow: none;
+    }
+
+    /* Каждый элемент вкладки */
+    .nav-pills .nav-item {
+      flex: 1; /* Заставляем элементы занимать одинаковое пространство */
+      display: flex;
+      align-items: stretch;
+    }
+
+
+    /* Стиль для кнопок с оранжевой рамкой */
+    .btn-outline-primary {
+        border: 2px solid #f39e41; /* Оранжевая рамка */
+        color: #000000; /* Цвет текста */
+        background-color: transparent; /* Прозрачный фон */
+        padding: 10px 20px;
+        border-radius: 0.5rem;
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Эффект при наведении на кнопку */
+    .btn-outline-primary:hover {
+        background-color: #f39e41;
+        color: white; /* Цвет текста при наведении */
+        border-color: #f39e41; /* Оранжевая рамка */
+    }
+
+    /* Размер кнопки */
+    .btn-wide {
+        width: 180px;
+        text-align: center;
+    }
+
+    /* Отступы между кнопками */
+    .btn-gap {
+        margin-right: 20px;
+    }
+    
+        .btn-outline-primary i {
+        margin-right: 8px; /* Добавляем отступ между иконкой и текстом */
+    }
+</style>
 
 </style>
+
+
+
+
+
 
 
 
@@ -241,141 +309,119 @@
 </header>
 
 
-<div class="container"><div class="row align-items-center">
-  <!-- Текстовая часть -->
-  <div class="col-md-6">
-    <p class="special-para">
-      Мы приглашаем в небольшую группу, где можно учиться заводить настоящих друзей, укреплять отношения и общаться открыто.
-    </p>
-    <p class="special-para">
-      <strong>Старт:</strong> 3 февраля<br/>
-      <strong>Вторник:</strong> 17:00–19:00 (мск), с февраля по июль<br/>
-      <strong>Оплата:</strong> 3000₽ / $40 / 40€ / 125₪ за встречу
-    </p>
-    <p class="special-para">
-      Приходите на предварительную встречу-знакомство, чтобы понять, подходит ли вам формат.
-      Иногда достаточно просто прийти и попробовать — остальное складывается в процессе.
-    </p>
-  </div>
+<div class="container">
+  <div class="row">
+    <!-- Текстовая часть (правая колонка) -->
+    <div class="col-md-6">
+      <p class="special-para">
+        Мы приглашаем в небольшую группу, где можно учиться заводить настоящих друзей, укреплять отношения и общаться открыто.
+      </p>
+      <p>
+        Старт 3 февраля <br/>
+        Вторник 17:00-19:00 (мск) с февраля по июль <br/>
+        Оплата 3000₽ / $40 / 40€ / 125₪	 за встречу<br/>
+        <br/>
+        Приходите на предварительную встречу-знакомство, чтобы понять подходит ли вам.
+        Иногда достаточно просто прийти и попробовать — остальное складывается в процессе.
+      </p>
+    </div>
 
-  <!-- Картинка -->
-  <div class="col-md-6 text-center">
-    <img src="friends.jpg" class="img-fluid custom-rounded" alt="friends">
+    <!-- Картинка (левая колонка) -->
+    <div class="col-md-6">
+      <img src="friends.jpg" class="img-fluid custom-rounded" alt="friends">
+    </div>
   </div>
 </div>
-</div>
-
 
 <div class="container my-4">
-  <div class="d-flex justify-content-center flex-wrap flex-md-nowrap text-center btn-spread">
-    <button class="btn btn-outline-primary rounded-circle btn-round-fixed btn-red"
-            data-target="sectionVoprosy">
-      О чем будем говорить?
-    </button>
+    <ul class="nav nav-pills justify-content-center flex-wrap flex-md-nowrap text-center" id="tabs">
+        <li class="nav-item">
+            <a class="nav-link btn-tab" id="tabVoprosy" data-bs-toggle="pill" href="#sectionVoprosy">
+                О чем будем говорить?
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link btn-tab" id="tabTseliMekhanika" data-bs-toggle="pill" href="#sectionTseliMekhanika">
+                Как проходят встречи?
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link btn-tab" id="tabVedyushchie" data-bs-toggle="pill" href="#sectionVedyushchie">
+                Ведущие
+            </a>
+        </li>
+    </ul>
+</div>
 
-    <button class="btn btn-outline-primary rounded-circle btn-round-fixed btn-orange"
-            data-target="sectionTseliMekhanika">
-      Как проходят встречи?
-    </button>
-
-    <button class="btn btn-outline-primary rounded-circle btn-round-fixed btn-olive"
-            data-target="sectionVedyushchie">
-      Ведущие
-    </button>
-  </div>
+<div class="tab-content container paper">
+    <div id="sectionVedyushchie" class="tab-pane fade">
+        <h3 style="display: inline-block; border-bottom: 3px solid #f39e41; padding-bottom: 0.3em;">
+            Ведущие
+        </h3>
+        <p class="special-para">
+            Мы — Ксения Келль и Екатерина Антонова, практикующие психологи в подходе позитивной транскультуральной психотерапии. Помогаем разбираться в отношениях, справляться со стрессом, тревогой и трудными жизненными ситуациями, работать над самооценкой и учиться строить доверительные и близкие связи с людьми.
+        </p>
+        <div class="d-flex justify-content-center gap-4 my-4">
+            <div class="text-center">
+                <img src="https://kseniakell.github.io/web/announcements/friendship2026/ks.jpg" alt="Ксения Келль" class="avatar img-fluid mb-2">
+                <h5 class="mb-0">Ксения <a href="https://wellb-centre.ru/kseniakell" target="_blank"><i class="bi bi-globe2" style="font-size: 1.1rem;"></i></a></h5>
+            </div>
+            <div class="text-center">
+                <img src="https://kseniakell.github.io/web/announcements/friendship2026/ka.jpg" alt="Катя Антонова" class="avatar img-fluid mb-2">
+                <h5 class="mb-0">Екатерина <a href="https://wellb-centre.ru/eantonova" target="_blank"><i class="bi bi-globe2" style="font-size: 1.1rem;"></i></a></h5>
+            </div>
+        </div>
+    </div>
+    <div id="sectionTseliMekhanika" class="tab-pane fade">
+        <h3 style="display: inline-block; border-bottom: 3px solid #f39e41; padding-bottom: 0.3em;">Как проходят встречи</h3>
+        <ul>
+            <li>Раз в неделю онлайн, в zoom, в привычном и комфортном формате.</li>
+            <li>Простые упражнения помогают заметить свои привычки в общении.</li>
+            <li>Разбираем реальные ситуации участников и учимся говорить о своих мыслях и чувствах.</li>
+            <li>Честная и бережная обратная связь помогает увидеть себя со стороны.</li>
+        </ul>
+        Встречи проходят регулярно в течение полугода — чтобы без спешки разобраться в себе и попробовать новое.
+        <br>
+        Предварительно будет короткая индивидуальная онлайн-встреча (15–20 минут) с ведущими, чтобы познакомиться, задать вопросы и понять, подходит ли формат.
+    </div>
+    <div id="sectionVoprosy" class="tab-pane fade">
+        <h3 style="display: inline-block; border-bottom: 3px solid #f39e41; padding-bottom: 0.3em;">О чём мы будем говорить</h3>
+        <h4>На встречи можно приходить с любыми вопросами про отношения</h4>
+        <br/>
+        <h4>Мы точно обсудим:</h4>
+        <ul>
+            <li>Где и как находить новых людей</li>
+            <li>Как сближаться, не оставаясь на уровне поверхностного общения</li>
+            <li>Что делать, если хочется близости, а начать кажется сложно</li>
+            <li>Как говорить о важном, не замалчивая то, что важно лично вам</li>
+            <li>Как поддерживать контакт и не теряться в отношениях</li>
+            <li>Как лучше понимать, что вам подходит, а что — нет</li>
+        </ul>
+        <h4>Также затронем непростые моменты:</h4>
+        <ul>
+            <li>Как заводить и развивать дружбу</li>
+            <li>Как поддерживать отношения на расстоянии</li>
+            <li>Как переживать изменения в жизни друзей</li>
+            <li>Как справляться с разочарованиями</li>
+            <li>Как отпускать отношения, которые больше не приносят тепла</li>
+        </ul>
+    </div>
 </div>
 
 
 
-
-<div id="sectionVedyushchie" class="toggle-section container paper" style="display: none;">
-  <h3 style="display: inline-block; border-bottom: 3px solid #6d8f72; padding-bottom: 0.3em;">
-    Ведущие
-  </h3>
-<p class="special-para">
-Мы — Ксения Келль и Екатерина Антонова, практикующие психологи в подходе позитивной транскультуральной психотерапии. Помогаем разбираться в отношениях, справляться со стрессом, тревогой и трудными жизненными ситуациями, работать над самооценкой и учиться строить доверительные и близкие связи с людьми.
-
-Ведём терапию более 5 лет, создавая безопасное пространство для понимания себя и живого общения с другими.
-  </p>
-  <!-- Фото по центру -->
-  <div class="d-flex justify-content-center gap-4 my-4">
-    <div class="text-center">
-      <img src="https://kseniakell.github.io/web/announcements/friendship2026/ks.jpg" alt="Ксения Келль" class="avatar img-fluid mb-2">
-      <h5 class="mb-0">Ксения <a href="https://wellb-centre.ru/kseniakell" target="_blank" style="color: inherit ; white-space: nowrap;" ><i class="bi bi-globe2" style="font-size: 1.1rem;"></i></a> </h5>
-    </div>
-
-    <div class="text-center">
-      <img src="https://kseniakell.github.io/web/announcements/friendship2026/ka.jpg" alt="Катя Антонова" class="avatar img-fluid mb-2">
-      <h5 class="mb-0">Екатерина <a href="https://wellb-centre.ru/eantonova" target="_blank" style="color: inherit; white-space: nowrap;"><i class="bi bi-globe2" style="font-size: 1.1rem;"></i></a> </h5>
-    </div>
-  </div>
-
-  
-</div>
-
-
-  <div id="sectionTseliMekhanika" class="toggle-section container paper" style="display: none;">
-    <h3 style="display: inline-block; border-bottom: 3px solid #a68f3f; padding-bottom: 0.3em;">Как проходят встречи</h3>
-
-<ul>
-<li> Раз в неделю онлайн, в zoom, в привычном и комфортном формате.</li>
-<li> Простые упражнения помогают заметить свои привычки в общении.</li>
-<li> Разбираем реальные ситуации участников и учимся говорить о своих мыслях и чувствах.</li>
-<li> Честная и бережная обратная связь помогает увидеть себя со стороны. </li>
-</ul>
-Встречи проходят регулярно в течение полугода —
-чтобы без спешки разобраться в себе и попробовать новое.
-
-Предварительно будет короткая индивидуальная онлайн-встреча (15–20 минут) с ведущими,
-чтобы познакомиться, задать вопросы и понять, подходит ли формат.
-  </div>
-
-  <div id="sectionVoprosy" class="toggle-section container paper" style="display:none;">
-    
-    <h3 style="display: inline-block; border-bottom: 3px solid #6e7f91; padding-bottom: 0.3em;"> О чём мы будем говорить</h3>
-<h4>На встречи можно приходить с любыми вопросами про отношения</h4>
-
-<br/>
-<h4>Мы точно обсудим:</h4>
-<ul>
-<li> где и как находить новых людей</li>
-<li> как сближаться, не оставаясь на уровне поверхностного общения</li>
-<li> что делать, если хочется близости, а начать кажется сложно</li>
-<li> как говорить о важном, не замалчивая то, что важно лично вам</li>
-<li> как поддерживать контакт и не теряться в отношениях</li>
-<li> как лучше понимать, что вам подходит, а что — нет</li>
-</ul>
-
-<h4>Также затронем непростые моменты:</h4>
-<ul>
-<li> как заводить и развивать дружбу</li>
-<li> как поддерживать отношения на расстоянии</li>
-<li> как переживать изменения в жизни друзей</li>
-<li> как справляться с разочарованиями</li>
-<li> как отпускать отношения, которые больше не приносят тепла</li>
-</ul>
-
-  </div>
-
-  <div id="sectionKontakty" class="toggle--section container paper">
-<!--    <h3 style="display: inline-block; border-bottom: 3px solid #6d8f72; padding-bottom: 0.3em;"></h3> -->
-<br/>
-
-<p class="special-para text-center">
-  Группа активно формируется — и к ней еще можно успеть присоединиться.
-</p>
-<p class="special-para text-center">
-  Напишите нам в телеграм кодовое слово «<b>дружба</b>», и мы все подробно расскажем.
-</p>
-
+    <p style="text-align: center;">
+Группа активно формируется —  и к ней еще можно успеть присоединиться.</p>
+    <p style="text-align: center;">
+Напишите нам в телеграм кодовое слово «<b>дружба</b>» и мы все подробно расскажем. </p>
 
     <div class="d-flex justify-content-center mt-3">
 
-      <a href="https://t.me/kseniakell" class="btn btn-outline-dark btn-wide btn-gap" target="_blank">
-        <i class="fab fa-telegram"></i> Ксюша
-      </a>
+<a href="https://t.me/kseniakell" class="btn btn-outline-primary btn-wide btn-gap" target="_blank">
+    <i class="fab fa-telegram"></i> Ксюша </a>
+
       
-    <a href="https://t.me/directorvsehvremen" class="btn btn-outline-dark btn-wide"  target="_blank">
+    <a href="https://t.me/directorvsehvremen" class="btn btn-outline-primary btn-wide btn-gap"  target="_blank">
         <i class="fab fa-telegram"></i> Катя
       </a>
     </div>
