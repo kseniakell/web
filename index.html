@@ -219,6 +219,19 @@
     .olist li::before{content:none;display:none}
     .about .facts small{display:block;line-height:1.35}
     .contact-btns{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}
+    /* mobile: photo scrolls with the page, slightly larger text */
+    @media (max-width:900px){
+      .about .photo{position:static}
+      body{font-size:18px}
+      .eyebrow{font-size:13px}
+      .hero .lead{font-size:19px}
+      .hero .meta,.first .small,.note,.honest{font-size:15.5px}
+      .card p,.olist span,.how div,.fcard p{font-size:16.5px}
+      .approach .method{font-size:15.5px}
+      .facts small,.edu-group small,.fcard .dur,.fcard .price small{font-size:14px}
+      .edu-group b{font-size:17.5px}
+      .bridge p,.first p.sub{font-size:19px}
+    }
   </style>
 </head>
 <body>
@@ -334,7 +347,7 @@
         <div class="step"><span>03</span><p>Мы замечаем, какими вы бываете с&nbsp;собой и&nbsp;другими, и пробуем по-новому прямо здесь, на сессиях.</p></div>
         <div class="step"><span>04</span><p>Со временем вы переносите это в жизнь: учитесь замечать себя и свои изменения.</p></div>
       </div>
-      <p class="method">Мой основной метод: позитивная психотерапия.<br>Опираюсь на теорию привязанности, современные подходы к&nbsp;работе с&nbsp;травмой и&nbsp;КПТ.<br>Регулярно прохожу супервизию и&nbsp;личную терапию.</p>
+      <p class="method">Мой основной метод&nbsp;— позитивная психотерапия.<br>Опираюсь на теорию привязанности, современные подходы к&nbsp;работе с&nbsp;травмой и&nbsp;КПТ.<br>Регулярно прохожу супервизию и&nbsp;личную терапию.</p>
     </div>
   </div>
 </section>
@@ -404,7 +417,7 @@
     <p class="eyebrow">Форматы и стоимость</p>
     <h2>Как можно встречаться</h2>
     <div class="fgrid">
-      <div class="fcard"><h3>Онлайн</h3><p class="dur">50 минут</p><p>По видеосвязи — из любого города и страны.</p><p class="price">5 500 ₽<small>55 € · $55</small></p></div>
+      <div class="fcard"><h3>Онлайн</h3><p class="dur">50 минут</p><p>По видеосвязи из&nbsp;любого города и&nbsp;страны.</p><p class="price">5 500 ₽<small>55 € · $55</small></p></div>
       <div class="fcard"><h3>Очно</h3><p class="dur">50 минут</p><p>В кабинете в Санкт-Петербурге.</p><p class="price">6 000 ₽<small>60 € · $60</small></p></div>
       <div class="fcard"><h3>Для пары</h3><p class="dur">1,5 часа</p><p>Когда хочется разобраться в отношениях вместе.</p><p class="price">8 000 ₽<small>80 € · $80</small></p></div>
       <div class="fcard"><h3>Группа «Дружба»</h3><p class="dur">онлайн</p><p>Про дружбу, доверие и то, как быть рядом с другими.</p><a href="https://kseniakell.com/announcements/friendship2026">Подробнее о группе →</a></div>
@@ -429,9 +442,9 @@
     <h2>Первый шаг может быть очень простым</h2>
     <p class="sub">Достаточно написать и задать вопрос. Это ни к чему не обязывает.</p>
     <div class="how">
-      <div>Вы пишете мне в Telegram. Можно одной фразой.</div>
-      <div>Я отвечаю в течение дня и предлагаю время.</div>
-      <div>На первой встрече вы решаете, хотите ли продолжать.</div>
+      <div>Напишите мне в&nbsp;Telegram. Можно одной фразой.</div>
+      <div>Я&nbsp;отвечу в&nbsp;течение дня и&nbsp;предложу время.</div>
+      <div>На&nbsp;первой встрече вы&nbsp;решите, хотите ли продолжить.</div>
     </div>
     <div class="contact-btns">
       <a class="btn" href="https://t.me/kseniakell" target="_blank" rel="noopener">Написать в&nbsp;Telegram</a>
